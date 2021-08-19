@@ -3,7 +3,7 @@
 
 	// skriv din kode her...
 	const hilsen = `Hej med dig, `;
-	const navne = ["Chris","Sheila","Ozlem","Vagn","Ona"]
+	const navne = ["Chris", "Sheila", "Ozlem", "Vagn", "Ona"]
 	var navn = navne[Math.floor(Math.random()*navne.length)];
 
 	const text = document.querySelector("em");
