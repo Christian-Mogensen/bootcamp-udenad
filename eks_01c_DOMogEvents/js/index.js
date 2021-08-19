@@ -10,26 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let textCountElement = document.querySelector("#text-count");
   let plusButton = document.querySelector("#btn-count-increase");
   let minusButton = document.querySelector("#btn-count-decrease");
-
+const btn = document.querySelectorAll("button");
+console.log(btn);
   function updateNumber() {
     textCountElement.textContent = number;
   }
   updateNumber();
 
-//   function calcNumber(event){
-// 	//   console.log(event);
-// 	  if(event.target.attributes.id.nodeValue === "btn-count-increase"){
-// 		  if(number < maximum){
-// 		  number++;
-// 		  updateNumber();
-// 		}
-// 	  } else if (event.target.attributes.id.nodeValue === "btn-count-decrease") {
-// 		if(number > minimum){  
-// 		number--;
-// 		  updateNumber();
-// 		}
-// 	  }
-//   }
 function calcNumber(direction){
 	if(direction === "inc" && number < maximum){
 		number++;
