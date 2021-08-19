@@ -4,7 +4,7 @@
 	// skriv din kode her...
 	const hilsen = `Hej med dig, `;
 	const navne = ["Chris", "Sheila", "Ozlem", "Vagn", "Ona"]
-	var navn = navne[Math.floor(Math.random()*navne.length)];
+	var navn = navne[~~(Math.random()*navne.length)];
 
 	const text = document.querySelector("em");
 	function hils(navn){
